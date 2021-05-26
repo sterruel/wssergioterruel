@@ -1,0 +1,21 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioWhile {
+	
+	public static void main(String[] args) {
+		
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia"));
+		int mes = Integer.parseInt(JOptionPane.showInputDialog("Digite o mes"));
+		int ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano"));
+		
+		while(ano>=1920 || ano<=2003) {
+		
+		}
+		
+		System.out.println("Digite o Ano Novamente: " + ano);
+		
+	}
+
+}

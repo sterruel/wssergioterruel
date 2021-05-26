@@ -1,0 +1,57 @@
+package variaveis;
+
+public class ManipulaString {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * Identificadores (nomes dos elementos que criamos: Variaveis, classe, pacote, etc).
+		 * 
+		 * - Regras:
+		 * 
+		 * 1 - Não começaras com numero. Exemplo: 1berto
+		 * 2 - Não utilizaras palavras reservadas. Exemplo: int, dougle, class, void 
+		 * 3 - Não fara uso de caracter especiais. Exemplo: n@me
+		 * 
+		 * - Padroes:
+		 * 
+		 * 1 - CamelCase: da segunda palavra em diante (em uma conposição)
+		 * deve começar com letra maiuscula.
+		 * certo = dataNascimento
+		 * errado = datanascimento
+		 * certo = data_nascimento
+		 * errado = data_Nascimento
+		 * 
+		 * 2 - UML: é responsavel por padronizar elesmentos da Orientação ao Objeto
+		 * - Toda classe deve iniciar com letra maiuscula
+		 * - Toda variavel/pacote deve começar com letra minuscula
+		 * - Todo metodo deve começar com letra minuscula e deve ser seguido de parenteses.
+		 * 
+		 * xpto => é uma variável
+		 * Xpto => é uma classe
+		 * xpto() => é uma funçao
+		 * Xpto.xpto() => é um método
+		 */
+			
+		String email = "sergio.Terruel.Junior@Gmail.com";
+		System.out.println("Original: " + email);
+		System.out.println("Minuscula: " + email.toLowerCase());
+		System.out.println("Maiusculo: " + email.toUpperCase());
+		System.out.println("Tem arroba? " + email.contains("@"));
+		System.out.println("Posição do arroba? " + email.indexOf("@"));		
+		System.out.println("Qtde Caracteres: " + email.length());	
+		System.out.println("Do 2º até o 5º caracter: " + email.substring(1,5));
+		System.out.println("Primeira metade: " + email.substring(0, email.length()/2));
+		System.out.println("Usuario: " + email.substring(0,email.indexOf("@")));
+		System.out.println("Servidor: " + email.substring(email.indexOf("@") + 1));
+		//se não for ate a cordenada final precisa colocar email.length()
+		System.out.println("Primeiro Catacter: " + email.charAt(0));
+		
+		//boas praticas para nomenclatura
+		
+		
+		
+		
+	}
+
+}

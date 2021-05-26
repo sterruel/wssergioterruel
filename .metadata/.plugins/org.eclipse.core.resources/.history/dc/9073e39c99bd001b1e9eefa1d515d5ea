@@ -1,0 +1,27 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio3 {
+	
+	public static void main(String[] args) {
+		
+		String colaborador = JOptionPane.showInputDiaLog("Colaborador").toUpperCase();
+		float salarioBruto = Float.parseFloat(JOptionPane.showInputDiaLog("Salario Bruto"));
+		byte faltas = Byte.parseByte(JOptionPane.showInputDiaLog("Faltas"));
+		if (faltas==0) {
+			salarioBruto = salarioBruto * (float) 1.02;
+		}
+		float inss=0;
+		if (salarioBruto<=1100) {
+			inss = salarioBruto * (float) 0.07;
+		}else if (salarioBruto>1100)
+			
+			
+			
+			
+		}
+		
+		
+	}
+

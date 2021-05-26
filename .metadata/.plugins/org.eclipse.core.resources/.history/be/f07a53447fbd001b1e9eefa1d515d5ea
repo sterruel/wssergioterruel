@@ -1,0 +1,30 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercico1 {
+
+	public static void main(String[] args) {
+		
+		float valor1 = Float.parseFloat(JOptionPane.showInputDialog("Digite primeiro valor: "));
+		float valor2 = Float.parseFloat(JOptionPane.showInputDialog("Digite segundo valor: "));
+		String operador = JOptionPane.showInputDialog("Digite o Operador: ").toUpperCase();
+		
+		if (operador.equals("+")) {
+			double total = (valor1 + valor2);
+			System.out.println("Total: = " + total);
+		} else if (operador.equals("-")) {
+			float total = (valor1 - valor2);
+			System.out.println("Total: = " + total);
+		} else 	if (operador.equals("*")) {
+			float total = (valor1 * valor2);
+			System.out.println("Total: = " + total);
+		} else if (operador.equals("/")) {
+			float total = (valor1 / valor2);
+			System.out.println("Total: = " + total);
+		} 
+		
+		
+	}
+
+}

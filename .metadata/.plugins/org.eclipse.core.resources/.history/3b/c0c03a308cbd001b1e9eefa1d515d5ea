@@ -1,0 +1,26 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+
+public class Exercicio2 {
+	
+public static void main(String[] args) {
+		
+		float diaria = Float.parseFloat(JOptionPane.showInputDialog("Digite a qtde de diarias "));
+		double valor = Double.parseDouble(JOptionPane.showInputDialog ("Valor da diaria"));
+		
+		if (diaria>10) {
+			double taxa = (valor * 0.05 + (valor * diaria));
+			System.out.println("Total: = R$" + taxa);
+		} else if (diaria>=5 && diaria<=10) {
+			double taxa = (valor * 0.08 + (valor * diaria));
+			System.out.println("Total: =  R$" + taxa);
+		} else if (diaria<5) {
+			double taxa = (valor * 0.10 + (valor * diaria));
+			System.out.println("Total: =  R$" + taxa);
+		}
+	
+	}
+
+}

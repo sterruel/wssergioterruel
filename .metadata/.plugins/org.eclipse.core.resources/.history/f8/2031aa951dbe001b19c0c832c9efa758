@@ -1,0 +1,20 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploWhile {
+	
+	public static void main(String[] args) {
+		
+		String email = JOptionPane.showInputDiaLog("Digite seu email").toLowerCase();
+		
+		if (email.contains("@")==false) {
+			String email = JOptionPane.showInputDiaLog("Digite seu email novamente").toLowerCase();
+		}
+		
+		System.out.println("Usuario: " + email.substring(email.indexOf("@")));
+			
+		
+	}
+
+}

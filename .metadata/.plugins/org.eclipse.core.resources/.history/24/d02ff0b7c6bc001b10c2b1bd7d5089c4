@@ -1,0 +1,32 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class CalculoProduto {
+	
+	public static void main(String[] args) {
+		
+		
+		String nome = JOptionPane.showInputDialog ("Nome do Produto");
+		int qtde = Integer.parseInt(JOptionPane.showInputDialog ("Qtde Produto"));
+		double valor = Double.parseDouble(JOptionPane.showInputDialog ("Valor Unitario"));
+		double total = qtde * valor;
+		
+		System.out.println("Nome............: " + nome);
+		System.out.println("Idade...........: " + qtde);
+		System.out.println("Altura..........: " + valor);	
+		System.out.println("Valor Total.....: " + total);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
